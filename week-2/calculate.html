@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <input type="text" id="num1" placeholder="Enter first number"> <br><br>
+    <input type="text" id="num2" placeholder="Enter second number"><br><br>
+
+    <button onclick="calculate(document.getElementById('num1').value, document.getElementById('num2').value, 'add')">Add</button>
+    <button onclick="calculate(document.getElementById('num1').value, document.getElementById('num2').value, 'subtract')">Subtract</button>
+    <button onclick="calculate(document.getElementById('num1').value, document.getElementById('num2').value, 'multiply')">Multiply</button>
+    <button onclick="calculate(document.getElementById('num1').value, document.getElementById('num2').value, 'divide')">Divide</button>
+
+    <p id="result"></p>
+
+    <script src="calculate.js"></script>
+
+</body>
+</html>
