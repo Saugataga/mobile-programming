@@ -35,6 +35,19 @@ body {
     object-fit: cover;
 }
 
+.qr {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 18px 12px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
 .name,
 .Age,
 .Address {
@@ -59,9 +72,14 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    width: 100%;
+    padding: 18px 12px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
 }
 
-#toggleQR {
+#showQR {
     display: inline-block;
     width: 160px;
     padding: 10px 16px;
@@ -71,7 +89,18 @@ body {
     border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
-    transition: none;
+}
+
+#hideQR {
+    display: inline-block;
+    width: 160px;
+    padding: 10px 16px;
+    background-color: #ef4444;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
 #qrImage {

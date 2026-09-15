@@ -10,7 +10,13 @@ $(document).ready(function() {
     });
 
 
-    $('#toggleQR').click(function() {
-        $('#qrImage').toggle();
+    $('#showQR').click(function() {
+        $('#qrImage').show();
+        $('#hideQR').show();
+    });
+
+    $('#hideQR').click(function() {
+        $('#qrImage').hide();
+        $("#hideQR").hide();
     });
 });
