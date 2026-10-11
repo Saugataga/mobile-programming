@@ -40,10 +40,8 @@ function writeUserData(userId,fname,lname,email,phone,address,gender,age,weight,
     age: age,
     weight: weight,
     height: height
-  
   });
 }
-
 
 writeUserData('1','John','Doe','john@gmail.com','1234567890','123 Main St','Male',30,70,180);
 writeUserData('2','Vane','Parker','vane@gmail.com','0987654321','456 Elm St','Female',28,60,165);
@@ -74,8 +72,6 @@ function readUserData(userId) {
         })
     })  
 }
-
-
 
 window.getData = function getData() {
   const userId = document.getElementById("userId").value;
