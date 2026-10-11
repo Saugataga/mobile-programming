@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="day3.js"></script>
+    <style>
+        body {
+            position: relative;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(192, 165, 207);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+        }
+
+        #start-animation {
+            position: relative;
+            z-index: 2;
+            padding: 10px 16px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <button id="start-animation">Animate Box</button>
+    <div class="box"></div>
+</body>
+</html>
